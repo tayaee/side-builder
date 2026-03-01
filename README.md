@@ -1,4 +1,12 @@
-### Recording with AI assistance
+# Selenium IDE AI Side Builder
+
+### Quick STart
+* Install uv
+* Add OPENAI_API_KEY to .env (create a new file)
+* Run below builder.py with AI and demo1.py without AI.
+
+### Use AI assistance to record playwright actions in the Selenium IDE .side format. 
+```bash
 % uv run builder.py --output demo1
 --- Designer Mode: demo1 ---
 
@@ -58,8 +66,10 @@ Save demo1_step_7.side? [Y/n]:
 --- Process Finished ---
 Files: demo1_step_1.side, demo1_step_2.side, demo1_step_3.side, demo1_step_4.side, demo1_step_5.side, demo1_step_6.side, demo1_step_7.side
 Script: demo1.py
+```
 
-### Play
+### Play the .side files.
+```bash
 % uv run demo1.py
 Playing: demo1_step_1.side Go to https://saucedemo.com
   Success: open https://saucedemo.com
@@ -78,3 +88,4 @@ Playing: demo1_step_6.side Click the hamburger menu on the left top corner
 Playing: demo1_step_7.side Click Logout
   Success: click id=logout_sidebar_link
 Done.
+```
