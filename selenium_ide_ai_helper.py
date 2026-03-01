@@ -131,7 +131,7 @@ class AISideBuilder(SeleniumIdeSideBuilder):
         self.model = model
 
     def ai_create_side_file(self, llm_prompt: str, side_file: Optional[str] = None) -> SeleniumIdeSide:
-        print(f"Task: '{llm_prompt}'...")
+        print(f"AI is thinking to find the steps for: '{llm_prompt}'...")
         screenshot_bytes = self.page.screenshot()
         base64_image = base64.b64encode(screenshot_bytes).decode('utf-8')
         
