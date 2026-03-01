@@ -1,4 +1,5 @@
 # Selenium IDE AI Side Builder
+Use AI assistance to create Selenium IDE script files interactively, then run them without AI. There's no need to spend time figuring out CSS selectors for Selenium or Playwright scripting.
 
 ### Quick Start
 * Install uv
