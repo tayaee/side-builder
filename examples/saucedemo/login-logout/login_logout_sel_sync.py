@@ -19,15 +19,9 @@ def main():
     chrome_options.use_automation_extension = False
     driver = webdriver.Chrome(options=chrome_options)
     try:
-        play_side(driver, 'sides/demo1_step_1.side', name='Go to the home of https://saucedemo.com')
-        play_side(driver, 'sides/demo1_step_2.side', name='Log in')
-        play_side(driver, 'sides/demo1_step_3.side', name='Add a backpack to the cart')
-        play_side(driver, 'sides/demo1_step_4.side', name='Go to cart for checkout')
-        play_side(driver, 'sides/demo1_step_5.side', name='Click Checkout')
-        play_side(driver, 'sides/demo1_step_6.side', name='Enter John as first name, Doe as last name, 11111 as zip code and click Continue')
-        play_side(driver, 'sides/demo1_step_7.side', name='Click Finish')
-        play_side(driver, 'sides/demo1_step_8.side', name='Click Back Home')
-        play_side(driver, 'sides/demo1_step_9.side', name='Log out')
+        play_side(driver, 'sides/login-logout_step_1.side', name='Go to the home of https://saucedemo.com')
+        play_side(driver, 'sides/login-logout_step_2.side', name='Log in')
+        play_side(driver, 'sides/login-logout_step_3.side', name='Log out')
     finally:
         driver.quit()
         print("Done.")

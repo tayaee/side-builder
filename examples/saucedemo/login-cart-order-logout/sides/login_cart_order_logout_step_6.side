@@ -1,18 +1,18 @@
 {
-  "id": "02379949-8dbe-464d-b778-58c299816b18",
+  "id": "a27cfc49-6401-4462-b394-8520e895d210",
   "version": "2.0",
-  "name": "Click Finish",
+  "name": "Remove backpack",
   "url": "",
   "tests": [
     {
-      "id": "9f76ebab-ae23-44c0-a377-09981b210cb4",
-      "name": "Click Finish",
+      "id": "b73736b1-2f5e-441c-9008-967382618fa7",
+      "name": "Remove backpack",
       "commands": [
         {
-          "id": "63f56ad2",
+          "id": "738d23d6",
           "comment": "",
           "command": "click",
-          "target": "id=finish",
+          "target": "id=remove-sauce-labs-backpack",
           "targets": [],
           "value": ""
         }

@@ -1,15 +1,15 @@
 {
-  "id": "8a23c0dc-c5cc-461a-a8a2-4a833b4b7623",
+  "id": "09f51f9c-5fa3-44d0-9a33-253f66d9db39",
   "version": "2.0",
   "name": "Log out",
   "url": "",
   "tests": [
     {
-      "id": "7345c5f2-7aef-425f-b63c-807c255e147c",
+      "id": "c7fe7f18-9ef7-42b8-820b-0732f951258e",
       "name": "Log out",
       "commands": [
         {
-          "id": "080326c2",
+          "id": "ab72e6d6",
           "comment": "",
           "command": "click",
           "target": "id=react-burger-menu-btn",
@@ -17,7 +17,7 @@
           "value": ""
         },
         {
-          "id": "c78a2584",
+          "id": "b6a31573",
           "comment": "",
           "command": "click",
           "target": "id=logout_sidebar_link",

@@ -1,23 +1,15 @@
 {
-  "id": "08fac590-62be-48f1-aad7-50235cb59612",
+  "id": "6b65ec97-6455-48a2-a78e-ca75df393214",
   "version": "2.0",
   "name": "Log in",
   "url": "",
   "tests": [
     {
-      "id": "c9cdb59c-04ee-4e27-aef2-06c237a09d9a",
+      "id": "154b6c49-34fc-49e8-8ba9-56bb4b89545f",
       "name": "Log in",
       "commands": [
         {
-          "id": "7e8795d2",
-          "comment": "",
-          "command": "open",
-          "target": "https://www.saucedemo.com/",
-          "targets": [],
-          "value": ""
-        },
-        {
-          "id": "71bd5e0d",
+          "id": "e00c8498",
           "comment": "",
           "command": "type",
           "target": "id=user-name",
@@ -25,7 +17,7 @@
           "value": "standard_user"
         },
         {
-          "id": "8105ffba",
+          "id": "a233854b",
           "comment": "",
           "command": "type",
           "target": "id=password",
@@ -33,7 +25,7 @@
           "value": "secret_sauce"
         },
         {
-          "id": "baf0025c",
+          "id": "bc5214a8",
           "comment": "",
           "command": "click",
           "target": "id=login-button",

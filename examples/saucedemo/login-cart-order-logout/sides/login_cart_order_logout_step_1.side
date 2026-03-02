@@ -1,15 +1,15 @@
 {
-  "id": "2589ab6b-b86f-4070-bd8c-451d70209dac",
+  "id": "bbb21425-86ac-4910-bf13-f2a5cbf6fbf2",
   "version": "2.0",
   "name": "Go to the home of https://saucedemo.com",
   "url": "",
   "tests": [
     {
-      "id": "35dac838-b0a8-433f-a122-ba0129cfaafb",
+      "id": "7550d632-0b53-4d93-96cb-17c5004b5925",
       "name": "Go to the home of https://saucedemo.com",
       "commands": [
         {
-          "id": "9cf878cf",
+          "id": "c13620b1",
           "comment": "",
           "command": "open",
           "target": "https://saucedemo.com",

@@ -1,18 +1,18 @@
 {
-  "id": "c76d061e-94a1-4b49-b88a-d4b27a50ee28",
+  "id": "d0e35af1-a221-4802-9b2c-b81fd150558e",
   "version": "2.0",
-  "name": "Click Checkout",
+  "name": "Click Finish",
   "url": "",
   "tests": [
     {
-      "id": "3e20f52e-50d3-44eb-9d49-a7e13de6f07c",
-      "name": "Click Checkout",
+      "id": "e476f01b-86ea-4b8a-8893-1d9a9b8eea94",
+      "name": "Click Finish",
       "commands": [
         {
-          "id": "7b916a99",
+          "id": "ed86fe32",
           "comment": "",
           "command": "click",
-          "target": "css=.btn.btn_action.btn_medium.checkout_button",
+          "target": "id=finish",
           "targets": [],
           "value": ""
         }

@@ -1,0 +1,43 @@
+{
+  "id": "8b54b2f0-e034-4cff-b588-aafb915268f0",
+  "version": "2.0",
+  "name": "Log in",
+  "url": "",
+  "tests": [
+    {
+      "id": "ffee4132-4d3e-4b1b-a482-2e73375fcb21",
+      "name": "Log in",
+      "commands": [
+        {
+          "id": "1c4d4326",
+          "comment": "",
+          "command": "type",
+          "target": "id=user-name",
+          "targets": [],
+          "value": "standard_user"
+        },
+        {
+          "id": "0b37dd65",
+          "comment": "",
+          "command": "type",
+          "target": "id=password",
+          "targets": [],
+          "value": "secret_sauce"
+        },
+        {
+          "id": "4ace2845",
+          "comment": "",
+          "command": "click",
+          "target": "id=login-button",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}
