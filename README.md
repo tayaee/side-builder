@@ -1,6 +1,8 @@
-# Side Player (side-builder)
+# Side Builder and Player
 
-side-player is a next-generation automation tool that bridges the gap between AI-driven intent and rock-solid execution. It allows you to create Selenium IDE (.side) scripts interactively using natural language and execute them anywhere using Playwright or Selenium.
+side-builder is a next-generation automation tool that bridges the gap between AI-driven intent and rock-solid execution. 
+
+It allows you to create Selenium IDE (.side) scripts interactively using natural language and execute them anywhere using Playwright or Selenium API.
 
 ---
 
@@ -10,8 +12,8 @@ side-player is a next-generation automation tool that bridges the gap between AI
 Install the package via pip or uv:
 
 ```bash
-pip install side-player   # with pip
-uv add side-player        # with uv
+pip install side-builder   # with pip
+uv add side-builder        # with uv
 ```
 
 Install Playwright
@@ -23,8 +25,8 @@ playwright install
 Install the package via pip or uv:
 
 ```bash
-pip install side-player   # with pip
-uv add side-player        # with uv
+pip install side-builder   # with pip
+uv add side-builder        # with uv
 ```
 
 ### Configuration
@@ -32,7 +34,7 @@ Set the environment variable OPENAI_API_KEY with your ownkey to run side-builder
 
 ## Demo
 
-### Demo 1. Generate *.side files and demo1_{sync,async,sel_sync}.py
+### Demo 1. Generate *.side files using `side-builder`.
 
 ```bash
 % side-builder --output demo1
@@ -63,7 +65,7 @@ Scripts created: demo1_sync.py, demo1_async.py, demo1_sel_sync.py
 Side files saved in: sides/
 ```
 
-### Demo 2. Playing *.side files using Playwright Sync API
+### Demo 2. Playing *.side files using Playwright Sync API `play_side()`.
 ```
 % uv run demo1_sync.py
 Playing: sides/demo1_step_1.side (Go to the home of https://saucedemo.com)
@@ -79,7 +81,7 @@ Playing: sides/demo1_step_3.side (Log out)
 Done.
 ```
 
-### Demo 3. Playing *.side files using Playwright Async API
+### Demo 3. Playing *.side files using Playwright Async API `play_side_async()`.
 ```
 % uv run demo1_async.py
 Playing (Async): sides/demo1_step_1.side (Go to the home of https://saucedemo.com)
@@ -95,7 +97,7 @@ Playing (Async): sides/demo1_step_3.side (Log out)
 Done.
 ```
 
-### Demo 4. Play *.side files using Selenium
+### Demo 4. Play *.side files using Selenium API `play_side()`.
 ```
 >uv run demo1_sel_sync.py
 Playing: sides/demo1_step_1.side (Go to the home of https://saucedemo.com)
@@ -123,7 +125,7 @@ Done.
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.10+
 - OpenAI API Key (required only for the side-builder recording phase)
 
 ## License
