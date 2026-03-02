@@ -6,7 +6,7 @@ side-player is a next-generation automation tool that bridges the gap between AI
 
 ## Quick Start
 
-### To use with Playwright
+### To create and play *.side files with Playwright
 Install the package via pip or uv:
 
 ```bash
@@ -19,7 +19,7 @@ Install Playwright
 playwright install
 ```
 
-### To use with Selenium
+### To create and play *.side files with Selenium
 Install the package via pip or uv:
 
 ```bash
@@ -51,44 +51,11 @@ Playing: sides\demo1_step_2.side ()
     Success: click id=login-button
     Save sides\demo1_step_2.side? [Y/n]:
 
-[Step 3] AI prompt for browser action [exit]: Add a backpack to the cart
+[Step 3] AI prompt for browser action [exit]: Log out
 Playing: sides\demo1_step_3.side ()
-    Success: click id=add-to-cart-sauce-labs-backpack
-    Save sides\demo1_step_3.side? [Y/n]:
-
-[Step 4] AI prompt for browser action [exit]: Go to cart for checkout
-Playing: sides\demo1_step_4.side ()
-    Success: click css=.shopping_cart_link
-    Save sides\demo1_step_4.side? [Y/n]:
-
-[Step 5] AI prompt for browser action [exit]: Click Checkout
-Playing: sides\demo1_step_5.side ()
-    Success: click css=.btn.btn_action.btn_medium.checkout_button
-    Save sides\demo1_step_5.side? [Y/n]:
-
-[Step 6] AI prompt for browser action [exit]: Enter John as first name, Doe as last name, 11111 as zip code and click Continue
-Playing: sides\demo1_step_6.side ()
-    Success: type id=first-name
-    Success: type id=last-name
-    Success: type id=postal-code
-    Success: click id=continue
-    Save sides\demo1_step_6.side? [Y/n]:
-
-[Step 7] AI prompt for browser action [exit]: Click Finish
-Playing: sides\demo1_step_7.side ()
-    Success: click id=finish
-    Save sides\demo1_step_7.side? [Y/n]:
-
-[Step 8] AI prompt for browser action [exit]: Click Back Home
-Playing: sides\demo1_step_8.side ()
-    Success: click css=.btn.btn_primary.btn_small[id='back-to-products']
-    Save sides\demo1_step_8.side? [Y/n]:
-
-[Step 9] AI prompt for browser action [exit]: Log out
-Playing: sides\demo1_step_9.side ()
     Success: click id=react-burger-menu-btn
     Success: click id=logout_sidebar_link
-    Save sides\demo1_step_9.side? [Y/n]:
+    Save sides\demo1_step_3.side? [Y/n]:
 
 [Step 10] AI prompt for browser action [exit]:
 
@@ -106,22 +73,7 @@ Playing: sides/demo1_step_2.side (Log in)
     Success: type id=user-name
     Success: type id=password
     Success: click id=login-button
-Playing: sides/demo1_step_3.side (Add a backpack to the cart)
-    Success: click id=add-to-cart-sauce-labs-backpack
-Playing: sides/demo1_step_4.side (Go to cart for checkout)
-    Success: click css=.shopping_cart_link
-Playing: sides/demo1_step_5.side (Click Checkout)
-    Success: click css=.btn.btn_action.btn_medium.checkout_button
-Playing: sides/demo1_step_6.side (Enter John as first name, Doe as last name, 11111 as zip code and click Continue)
-    Success: type id=first-name
-    Success: type id=last-name
-    Success: type id=postal-code
-    Success: click id=continue
-Playing: sides/demo1_step_7.side (Click Finish)
-    Success: click id=finish
-Playing: sides/demo1_step_8.side (Click Back Home)
-    Success: click css=.btn.btn_primary.btn_small[id='back-to-products']
-Playing: sides/demo1_step_9.side (Log out)
+Playing: sides/demo1_step_3.side (Log out)
     Success: click id=react-burger-menu-btn
     Success: click id=logout_sidebar_link
 Done.
@@ -137,22 +89,7 @@ Playing (Async): sides/demo1_step_2.side (Log in)
     Success: type id=user-name
     Success: type id=password
     Success: click id=login-button
-Playing (Async): sides/demo1_step_3.side (Add a backpack to the cart)
-    Success: click id=add-to-cart-sauce-labs-backpack
-Playing (Async): sides/demo1_step_4.side (Go to cart for checkout)
-    Success: click css=.shopping_cart_link
-Playing (Async): sides/demo1_step_5.side (Click Checkout)
-    Success: click css=.btn.btn_action.btn_medium.checkout_button
-Playing (Async): sides/demo1_step_6.side (Enter John as first name, Doe as last name, 11111 as zip code and click Continue)
-    Success: type id=first-name
-    Success: type id=last-name
-    Success: type id=postal-code
-    Success: click id=continue
-Playing (Async): sides/demo1_step_7.side (Click Finish)
-    Success: click id=finish
-Playing (Async): sides/demo1_step_8.side (Click Back Home)
-    Success: click css=.btn.btn_primary.btn_small[id='back-to-products']
-Playing (Async): sides/demo1_step_9.side (Log out)
+Playing (Async): sides/demo1_step_3.side (Log out)
     Success: click id=react-burger-menu-btn
     Success: click id=logout_sidebar_link
 Done.
@@ -168,22 +105,7 @@ Playing: sides/demo1_step_2.side (Log in)
     Success: type id=user-name
     Success: type id=password
     Success: click id=login-button
-Playing: sides/demo1_step_3.side (Add a backpack to the cart)
-    Success: click id=add-to-cart-sauce-labs-backpack
-Playing: sides/demo1_step_4.side (Go to cart for checkout)
-    Success: click css=.shopping_cart_link
-Playing: sides/demo1_step_5.side (Click Checkout)
-    Success: click css=.btn.btn_action.btn_medium.checkout_button
-Playing: sides/demo1_step_6.side (Enter John as first name, Doe as last name, 11111 as zip code and click Continue)
-    Success: type id=first-name
-    Success: type id=last-name
-    Success: type id=postal-code
-    Success: click id=continue
-Playing: sides/demo1_step_7.side (Click Finish)
-    Success: click id=finish
-Playing: sides/demo1_step_8.side (Click Back Home)
-    Success: click css=.btn.btn_primary.btn_small[id='back-to-products']
-Playing: sides/demo1_step_9.side (Log out)
+Playing: sides/demo1_step_3.side (Log out)
     Success: click id=react-burger-menu-btn
     Success: click id=logout_sidebar_link
 Done.
