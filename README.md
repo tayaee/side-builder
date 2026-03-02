@@ -1,8 +1,6 @@
 # Side Player (side-builder)
 
-**Create Selenium IDE scripts with AI, run them anywhere with Playwright.** Stop wasting
-time hunting for CSS selectors or XPaths. Use AI to record your intent once, and
-execute the resulting .side files natively and cost-free.
+side-player is a next-generation automation tool that bridges the gap between AI-driven intent and rock-solid execution. It allows you to create Selenium IDE (.side) scripts interactively using natural language and execute them anywhere using Playwright or Selenium.
 
 ---
 
