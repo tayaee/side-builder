@@ -24,7 +24,11 @@ async def highlight_async(page: Page, selector: str):
 
 
 async def play_side_async(
-    page: Page, side_file: str, name: str = "", base_url: str = "", debug: bool = False,
+    page: Page,
+    side_file: str,
+    name: str = "",
+    base_url: str = "",
+    debug: bool = False,
 ):
     if debug:
         print(f"Playing (Async): {side_file} ({name})")

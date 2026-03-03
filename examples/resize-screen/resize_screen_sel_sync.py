@@ -1,3 +1,11 @@
+# /// pyproject
+# [requires]
+# python = ">=3.10"
+# selenium = "*"
+# side-player = "*"
+# ///
+# Run: uv run <script>.py (with PEP 723 support)
+
 import time
 
 from selenium import webdriver
@@ -21,9 +29,19 @@ def main():
     chrome_options.use_automation_extension = False
     driver = webdriver.Chrome(options=chrome_options)
     try:
-        play_side(driver, "sides/resize_screen_step_1.side", name="Adjust browser size to 500x500")
+        play_side(
+            driver,
+            "sides/resize_screen_step_1.side",
+            name="Adjust browser size to 500x500",
+            debug=True,
+        )
         time.sleep(2)
-        play_side(driver, "sides/resize_screen_step_2.side", name="Adjust browser size to 1000x1000")
+        play_side(
+            driver,
+            "sides/resize_screen_step_2.side",
+            name="Adjust browser size to 1000x1000",
+            debug=True,
+        )
         time.sleep(2)
     finally:
         driver.quit()

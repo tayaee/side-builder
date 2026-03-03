@@ -269,7 +269,7 @@ def main(output):
                 for f, p in saved_steps
             ]
         )
-        sync_filename = f"{output}_sync.py"
+        sync_filename = f"{output}_pw_sync.py"
         with open(sync_filename, "w", encoding="utf-8") as f:
             f.write(PLAYWRIGHT_SYNC_TEMPLATE.format(steps=sync_code))
 
@@ -280,7 +280,7 @@ def main(output):
                 for f, p in saved_steps
             ]
         )
-        async_filename = f"{output}_async.py"
+        async_filename = f"{output}_pw_async.py"
         with open(async_filename, "w", encoding="utf-8") as f:
             f.write(PLAYWRIGHT_ASYNC_TEMPLATE.format(steps=async_code))
 

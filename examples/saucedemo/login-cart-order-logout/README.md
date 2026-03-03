@@ -85,18 +85,18 @@ Playing: sides\login_cart_order_logout_step_11.side ()
 
 [Step 12] AI prompt for browser action [exit]:
 
-Scripts created: login_cart_order_logout_sync.py, login_cart_order_logout_async.py, login_cart_order_logout_sel_sync.py
+Scripts created: login_cart_order_logout_pw_sync.py, login_cart_order_logout_pw_async.py, login_cart_order_logout_sel_sync.py
 Side files saved in: sides/
 ```
 
 # Replay the sides/*.side with Playwright Sync API
 ```
-% uv run login_cart_order_logout_sync.py
+% uv run login_cart_order_logout_pw_sync.py
 ```
 
 # Replay the sides/*.side with Playwright Async API
 ```
-% uv run login_cart_order_logout_async.py
+% uv run login_cart_order_logout_pw_async.py
 ```
 
 # Replay the sides/*.side with Selenium Sync API

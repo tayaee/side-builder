@@ -22,7 +22,7 @@ side-builder --help
 ### Running Examples
 ```
 cd examples/saucedemo/login-cart-order-logout
-uv run login_cart_order_logout_sync.py
+uv run login_cart_order_logout_pw_sync.py
 ```
 
 ## Why Side Builder?

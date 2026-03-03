@@ -19,7 +19,7 @@ The Side Builder requires an OpenAI API key to use the gpt-5-nano model.
 
 # Replay the sides/*.side with Playwright Sync API
 ```
-% uv run resize_screen_sync.py
+% uv run resize_screen_pw_sync.py
 ```
 
 # Replay the sides/*.side with Playwright Async API

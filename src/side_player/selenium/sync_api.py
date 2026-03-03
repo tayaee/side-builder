@@ -26,7 +26,13 @@ def highlight(driver: WebDriver, selector_tuple: tuple):
         pass
 
 
-def play_side(driver: WebDriver, side_file: str, name: str = "", base_url: str = "", debug: bool = False):
+def play_side(
+    driver: WebDriver,
+    side_file: str,
+    name: str = "",
+    base_url: str = "",
+    debug: bool = False,
+):
     if debug:
         print(f"Playing: {side_file} ({name})")
     if not os.path.exists(side_file):
