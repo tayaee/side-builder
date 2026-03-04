@@ -27,14 +27,11 @@ def main():
     chrome_options.use_automation_extension = False
     driver = webdriver.Chrome(options=chrome_options)
     try:
-        play_side(
-            driver,
-            "sides/login-logout_step_1.side",
-            name="Go to the home of https://saucedemo.com",
-            debug=True,
-        )
-        play_side(driver, "sides/login-logout_step_2.side", name="Log in", debug=True)
-        play_side(driver, "sides/login-logout_step_3.side", name="Log out", debug=True)
+        play_side(driver, 'sides/basic_web_page_step_1.side', name='Go to the home of testpages.eviltester.com', debug=True)
+        play_side(driver, 'sides/basic_web_page_step_2.side', name='Click Pages in the menu tree', debug=True)
+        play_side(driver, 'sides/basic_web_page_step_3.side', name='Click Basics', debug=True)
+        play_side(driver, 'sides/basic_web_page_step_4.side', name='Click Basic Web Page', debug=True)
+        play_side(driver, 'sides/basic_web_page_step_5.side', name='Click "Click Me" button', debug=True)
     finally:
         driver.quit()
         print("Done.")

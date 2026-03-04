@@ -1,0 +1,35 @@
+{
+  "id": "b0e790ed-9b38-4ced-b6b7-bfe4fe9ff74c",
+  "version": "2.0",
+  "name": "Click Basic Web Page",
+  "url": "",
+  "tests": [
+    {
+      "id": "0b453396-96fe-4cae-a150-f2d19a1a2f7f",
+      "name": "Click Basic Web Page",
+      "commands": [
+        {
+          "id": "3473c1a6",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=m-pagesbasicsbasic-web-page",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8d5a26a2",
+          "comment": "",
+          "command": "click",
+          "target": "id=m-pagesbasicsbasic-web-page",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

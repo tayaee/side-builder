@@ -1,0 +1,35 @@
+{
+  "id": "99fbde4c-247a-4d65-aa52-b9a8b638017b",
+  "version": "2.0",
+  "name": "Log out",
+  "url": "",
+  "tests": [
+    {
+      "id": "bcb3d178-93c4-4351-92b9-7b9242db0572",
+      "name": "Log out",
+      "commands": [
+        {
+          "id": "44e9908d",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=a.button.secondary.radius",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1f0c14ec",
+          "comment": "",
+          "command": "click",
+          "target": "css=a.button.secondary.radius",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

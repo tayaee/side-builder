@@ -7,7 +7,6 @@
 # Run: uv run <script>.py (with PEP 723 support)
 
 import asyncio
-import time
 
 from playwright.async_api import async_playwright
 
@@ -18,21 +17,10 @@ async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
-        time.sleep(2)
-        await play_side_async(
-            page,
-            "sides/resize_screen_step_1.side",
-            name="Adjust browser size to 500x500",
-            debug=True,
-        )
-        time.sleep(2)
-        await play_side_async(
-            page,
-            "sides/resize_screen_step_2.side",
-            name="Adjust browser size to 1000x1000",
-            debug=True,
-        )
-        time.sleep(2)
+        await play_side_async(page, 'sides/text_input_step_1.side', name='Go to the home of http://uitestingplayground.com', debug=True)
+        await play_side_async(page, 'sides/text_input_step_2.side', name='Adjust browser size to 1200x1200', debug=True)
+        await play_side_async(page, 'sides/text_input_step_3.side', name='Click Text Input', debug=True)
+        await play_side_async(page, 'sides/text_input_step_4.side', name='Enter MyNewButton as the new button name and click the blue button', debug=True)
         await browser.close()
         print("Done.")
 

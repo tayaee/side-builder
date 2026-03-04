@@ -1,0 +1,43 @@
+{
+  "id": "da358ea4-7259-478c-a65b-4f3329184b07",
+  "version": "2.0",
+  "name": "Click Form Authentication",
+  "url": "",
+  "tests": [
+    {
+      "id": "b8aa5e19-2522-4e39-b29f-65bd41aedea9",
+      "name": "Click Form Authentication",
+      "commands": [
+        {
+          "id": "816ecd5e",
+          "comment": "",
+          "command": "open",
+          "target": "https://the-internet.herokuapp.com/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b8705299",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "xpath=//a[normalize-space()='Form Authentication']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fa0f69d4",
+          "comment": "",
+          "command": "click",
+          "target": "xpath=//a[normalize-space()='Form Authentication']",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

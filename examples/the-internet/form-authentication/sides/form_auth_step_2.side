@@ -1,0 +1,27 @@
+{
+  "id": "8d587228-d4ff-4635-a499-5cd8c96937a8",
+  "version": "2.0",
+  "name": "Resize browser to 1200 x 1200",
+  "url": "",
+  "tests": [
+    {
+      "id": "8e67257c-87b4-4561-a6e8-e8d871e9aea5",
+      "name": "Resize browser to 1200 x 1200",
+      "commands": [
+        {
+          "id": "dfa1c288",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1200,1200",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

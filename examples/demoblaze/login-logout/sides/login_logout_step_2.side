@@ -1,0 +1,75 @@
+{
+  "id": "83c8ab56-7ced-4e6a-8a3b-27d4f1df3c52",
+  "version": "2.0",
+  "name": "Log in as side-builder-user-20260303 with password-20260303",
+  "url": "",
+  "tests": [
+    {
+      "id": "1dea5e41-a4da-4ce1-9270-90eb6cc02f50",
+      "name": "Log in as side-builder-user-20260303 with password-20260303",
+      "commands": [
+        {
+          "id": "4407728d",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1024,768",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e1d98ec6",
+          "comment": "",
+          "command": "open",
+          "target": "https://demoblaze.com/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "877da9d5",
+          "comment": "",
+          "command": "click",
+          "target": "id=login2",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "37d750d3",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=loginusername",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "237aefba",
+          "comment": "",
+          "command": "type",
+          "target": "id=loginusername",
+          "targets": [],
+          "value": "side-builder-user-20260303"
+        },
+        {
+          "id": "b76863dd",
+          "comment": "",
+          "command": "type",
+          "target": "id=loginpassword",
+          "targets": [],
+          "value": "password-20260303"
+        },
+        {
+          "id": "ed0761e8",
+          "comment": "",
+          "command": "click",
+          "target": "xpath=//div[@id='logInModal']//button[contains(@class,'btn-primary') and contains(.,'Log in')]",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

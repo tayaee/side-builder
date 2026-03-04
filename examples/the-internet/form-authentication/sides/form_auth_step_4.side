@@ -1,0 +1,51 @@
+{
+  "id": "017e1d51-be51-4a0d-a4ae-a7003de8fdeb",
+  "version": "2.0",
+  "name": "Log in",
+  "url": "",
+  "tests": [
+    {
+      "id": "af6efee7-6b29-49d8-b30e-d3fce606303c",
+      "name": "Log in",
+      "commands": [
+        {
+          "id": "70fd44b6",
+          "comment": "",
+          "command": "open",
+          "target": "https://the-internet.herokuapp.com/login",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e8a76411",
+          "comment": "",
+          "command": "type",
+          "target": "id=username",
+          "targets": [],
+          "value": "tomsmith"
+        },
+        {
+          "id": "f7fd89cf",
+          "comment": "",
+          "command": "type",
+          "target": "id=password",
+          "targets": [],
+          "value": "SuperSecretPassword!"
+        },
+        {
+          "id": "93c30458",
+          "comment": "",
+          "command": "click",
+          "target": "css=.radius",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

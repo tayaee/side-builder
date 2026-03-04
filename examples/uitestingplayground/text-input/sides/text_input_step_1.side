@@ -1,0 +1,35 @@
+{
+  "id": "bc40ac52-feb7-47a4-bf75-0531367a414a",
+  "version": "2.0",
+  "name": "Go to the home of http://uitestingplayground.com",
+  "url": "",
+  "tests": [
+    {
+      "id": "70b1a362-453f-40ff-9643-603283a8ed28",
+      "name": "Go to the home of http://uitestingplayground.com",
+      "commands": [
+        {
+          "id": "e51b1bdf",
+          "comment": "",
+          "command": "open",
+          "target": "http://uitestingplayground.com",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fa590953",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=body",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

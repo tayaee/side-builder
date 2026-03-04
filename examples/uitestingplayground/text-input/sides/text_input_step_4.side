@@ -1,0 +1,35 @@
+{
+  "id": "c74e5d58-61e3-4f25-8f44-1ca8d2cada70",
+  "version": "2.0",
+  "name": "Enter MyNewButton as the new button name and click the blue button",
+  "url": "",
+  "tests": [
+    {
+      "id": "a069065e-b764-45e8-8e29-49db0c94ee2e",
+      "name": "Enter MyNewButton as the new button name and click the blue button",
+      "commands": [
+        {
+          "id": "367e43bd",
+          "comment": "",
+          "command": "type",
+          "target": "id=newButtonName",
+          "targets": [],
+          "value": "MyNewButton"
+        },
+        {
+          "id": "856033a3",
+          "comment": "",
+          "command": "click",
+          "target": "id=updatingButton",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

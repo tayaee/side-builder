@@ -1,0 +1,43 @@
+{
+  "id": "fc8d16fc-cd78-4356-8900-937aadbd1281",
+  "version": "2.0",
+  "name": "Click Pages in the menu tree",
+  "url": "",
+  "tests": [
+    {
+      "id": "2c39b4c9-cc67-42ef-977d-3ff456732b34",
+      "name": "Click Pages in the menu tree",
+      "commands": [
+        {
+          "id": "fc39c841",
+          "comment": "",
+          "command": "open",
+          "target": "https://testpages.eviltester.com/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3f595259",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=m-pages",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a2087fe9",
+          "comment": "",
+          "command": "click",
+          "target": "id=m-pages",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

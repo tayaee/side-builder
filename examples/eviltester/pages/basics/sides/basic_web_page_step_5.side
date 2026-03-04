@@ -1,0 +1,35 @@
+{
+  "id": "7d8a391f-0293-4c6d-a02c-df650e500009",
+  "version": "2.0",
+  "name": "Click \"Click Me\" button",
+  "url": "",
+  "tests": [
+    {
+      "id": "d7a13238-2827-40bf-9694-954a1ce989fd",
+      "name": "Click \"Click Me\" button",
+      "commands": [
+        {
+          "id": "18177ae3",
+          "comment": "",
+          "command": "open",
+          "target": "https://testpages.eviltester.com/pages/basics/basic-web-page/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6cceae51",
+          "comment": "",
+          "command": "click",
+          "target": "id=button1",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

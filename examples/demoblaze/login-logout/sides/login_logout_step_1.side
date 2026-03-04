@@ -1,0 +1,27 @@
+{
+  "id": "9c190388-14d2-4f38-b4c4-06ae5759fd0e",
+  "version": "2.0",
+  "name": "Go to the home of demoblaze.com",
+  "url": "",
+  "tests": [
+    {
+      "id": "d9c298c9-8e93-4640-80f4-6780a27391ff",
+      "name": "Go to the home of demoblaze.com",
+      "commands": [
+        {
+          "id": "d51bf3eb",
+          "comment": "",
+          "command": "open",
+          "target": "https://demoblaze.com/",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

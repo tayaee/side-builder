@@ -1,0 +1,35 @@
+{
+  "id": "0ec8e69f-4d6f-4cb2-ae08-9abb5be3c64a",
+  "version": "2.0",
+  "name": "Go to the home of demoblaze.com",
+  "url": "",
+  "tests": [
+    {
+      "id": "2dfd2a79-caa0-4140-9932-30b7dbad3e4d",
+      "name": "Go to the home of demoblaze.com",
+      "commands": [
+        {
+          "id": "bfcfe542",
+          "comment": "",
+          "command": "open",
+          "target": "https://www.demoblaze.com",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cfed303c",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "xpath=//body",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

@@ -1,0 +1,59 @@
+{
+  "id": "e0a2b7a7-15dd-409b-9ea4-25b6a05e958c",
+  "version": "2.0",
+  "name": "Enter John Doe as fullname, johndoe@gmail.com as Email, 123 Devil St FL USA as current address and click Submit",
+  "url": "",
+  "tests": [
+    {
+      "id": "7392253d-d726-4bdc-b2bb-3f676ff31599",
+      "name": "Enter John Doe as fullname, johndoe@gmail.com as Email, 123 Devil St FL USA as current address and click Submit",
+      "commands": [
+        {
+          "id": "422a549a",
+          "comment": "",
+          "command": "open",
+          "target": "https://demoqa.com/text-box",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fa588812",
+          "comment": "",
+          "command": "type",
+          "target": "id=userName",
+          "targets": [],
+          "value": "John Doe"
+        },
+        {
+          "id": "2dd3622d",
+          "comment": "",
+          "command": "type",
+          "target": "id=userEmail",
+          "targets": [],
+          "value": "johndoe@gmail.com"
+        },
+        {
+          "id": "86fca15d",
+          "comment": "",
+          "command": "type",
+          "target": "id=currentAddress",
+          "targets": [],
+          "value": "123 Devil St FL USA"
+        },
+        {
+          "id": "1ef0e2db",
+          "comment": "",
+          "command": "click",
+          "target": "id=submit",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

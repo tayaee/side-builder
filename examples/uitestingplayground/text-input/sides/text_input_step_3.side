@@ -1,0 +1,27 @@
+{
+  "id": "b23f35e1-0388-4e21-815b-1fa02fac2a34",
+  "version": "2.0",
+  "name": "Click Text Input",
+  "url": "",
+  "tests": [
+    {
+      "id": "38da7e53-6292-4b92-b1c5-976369d091c9",
+      "name": "Click Text Input",
+      "commands": [
+        {
+          "id": "25f4b5a7",
+          "comment": "",
+          "command": "click",
+          "target": "xpath=//a[text()='Text Input']",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

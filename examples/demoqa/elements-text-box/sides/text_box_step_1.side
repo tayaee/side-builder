@@ -1,0 +1,35 @@
+{
+  "id": "a2f5dc3d-6115-41d8-91ce-d12ad9d798fd",
+  "version": "2.0",
+  "name": "Go to https://demoqa.com/text-box.",
+  "url": "",
+  "tests": [
+    {
+      "id": "3cd85402-5346-4415-85c7-bce483fc5c64",
+      "name": "Go to https://demoqa.com/text-box.",
+      "commands": [
+        {
+          "id": "b85e5be0",
+          "comment": "",
+          "command": "open",
+          "target": "https://demoqa.com/text-box",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f6b7a6ed",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=userName",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

@@ -15,14 +15,11 @@ def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         page = browser.new_page()
-        play_side(
-            page,
-            "sides/login-logout_step_1.side",
-            name="Go to the home of https://saucedemo.com",
-            debug=True,
-        )
-        play_side(page, "sides/login-logout_step_2.side", name="Log in", debug=True)
-        play_side(page, "sides/login-logout_step_3.side", name="Log out", debug=True)
+        play_side(page, 'sides/form_auth_step_1.side', name='Go to the home of the-internet.herokuapp.com', debug=True)
+        play_side(page, 'sides/form_auth_step_2.side', name='Resize browser to 1200 x 1200', debug=True)
+        play_side(page, 'sides/form_auth_step_3.side', name='Click Form Authentication', debug=True)
+        play_side(page, 'sides/form_auth_step_4.side', name='Log in', debug=True)
+        play_side(page, 'sides/form_auth_step_5.side', name='Log out', debug=True)
         browser.close()
         print("Done.")
 

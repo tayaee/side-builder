@@ -1,0 +1,43 @@
+{
+  "id": "0a108f72-a69f-47bb-a82c-bab9517c8368",
+  "version": "2.0",
+  "name": "Go to the home of testpages.eviltester.com",
+  "url": "",
+  "tests": [
+    {
+      "id": "96ba08ab-347e-4b72-ae18-e218d1e68ec8",
+      "name": "Go to the home of testpages.eviltester.com",
+      "commands": [
+        {
+          "id": "55af5b8f",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "900,900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2b7b674f",
+          "comment": "",
+          "command": "open",
+          "target": "https://testpages.eviltester.com/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4dc4b5d8",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=body",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

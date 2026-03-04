@@ -27,14 +27,9 @@ def main():
     chrome_options.use_automation_extension = False
     driver = webdriver.Chrome(options=chrome_options)
     try:
-        play_side(
-            driver,
-            "sides/login-logout_step_1.side",
-            name="Go to the home of https://saucedemo.com",
-            debug=True,
-        )
-        play_side(driver, "sides/login-logout_step_2.side", name="Log in", debug=True)
-        play_side(driver, "sides/login-logout_step_3.side", name="Log out", debug=True)
+        play_side(driver, 'sides/text_box_step_1.side', name='Go to https://demoqa.com/text-box.', debug=True)
+        play_side(driver, 'sides/text_box_step_2.side', name='Enter John Doe as fullname, johndoe@gmail.com as Email, 123 Devil St FL USA as current address and click Submit', debug=True)
+        play_side(driver, 'sides/text_box_step_3.side', name='Click Submit', debug=True)
     finally:
         driver.quit()
         print("Done.")

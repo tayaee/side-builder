@@ -27,14 +27,10 @@ def main():
     chrome_options.use_automation_extension = False
     driver = webdriver.Chrome(options=chrome_options)
     try:
-        play_side(
-            driver,
-            "sides/login-logout_step_1.side",
-            name="Go to the home of https://saucedemo.com",
-            debug=True,
-        )
-        play_side(driver, "sides/login-logout_step_2.side", name="Log in", debug=True)
-        play_side(driver, "sides/login-logout_step_3.side", name="Log out", debug=True)
+        play_side(driver, 'sides/text_input_step_1.side', name='Go to the home of http://uitestingplayground.com', debug=True)
+        play_side(driver, 'sides/text_input_step_2.side', name='Adjust browser size to 1200x1200', debug=True)
+        play_side(driver, 'sides/text_input_step_3.side', name='Click Text Input', debug=True)
+        play_side(driver, 'sides/text_input_step_4.side', name='Enter MyNewButton as the new button name and click the blue button', debug=True)
     finally:
         driver.quit()
         print("Done.")

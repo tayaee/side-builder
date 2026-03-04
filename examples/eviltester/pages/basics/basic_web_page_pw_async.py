@@ -7,7 +7,6 @@
 # Run: uv run <script>.py (with PEP 723 support)
 
 import asyncio
-import time
 
 from playwright.async_api import async_playwright
 
@@ -18,21 +17,11 @@ async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
-        time.sleep(2)
-        await play_side_async(
-            page,
-            "sides/resize_screen_step_1.side",
-            name="Adjust browser size to 500x500",
-            debug=True,
-        )
-        time.sleep(2)
-        await play_side_async(
-            page,
-            "sides/resize_screen_step_2.side",
-            name="Adjust browser size to 1000x1000",
-            debug=True,
-        )
-        time.sleep(2)
+        await play_side_async(page, 'sides/basic_web_page_step_1.side', name='Go to the home of testpages.eviltester.com', debug=True)
+        await play_side_async(page, 'sides/basic_web_page_step_2.side', name='Click Pages in the menu tree', debug=True)
+        await play_side_async(page, 'sides/basic_web_page_step_3.side', name='Click Basics', debug=True)
+        await play_side_async(page, 'sides/basic_web_page_step_4.side', name='Click Basic Web Page', debug=True)
+        await play_side_async(page, 'sides/basic_web_page_step_5.side', name='Click "Click Me" button', debug=True)
         await browser.close()
         print("Done.")
 

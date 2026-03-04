@@ -27,14 +27,9 @@ def main():
     chrome_options.use_automation_extension = False
     driver = webdriver.Chrome(options=chrome_options)
     try:
-        play_side(
-            driver,
-            "sides/login-logout_step_1.side",
-            name="Go to the home of https://saucedemo.com",
-            debug=True,
-        )
-        play_side(driver, "sides/login-logout_step_2.side", name="Log in", debug=True)
-        play_side(driver, "sides/login-logout_step_3.side", name="Log out", debug=True)
+        play_side(driver, 'sides/login_logout_step_1.side', name='Go to the home of demoblaze.com', debug=True)
+        play_side(driver, 'sides/login_logout_step_2.side', name='Log in as side-builder-user-20260303 with password-20260303', debug=True)
+        play_side(driver, 'sides/login_logout_step_3.side', name='Log out', debug=True)
     finally:
         driver.quit()
         print("Done.")

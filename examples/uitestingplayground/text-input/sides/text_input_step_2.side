@@ -1,0 +1,27 @@
+{
+  "id": "9ccda2ed-5cda-4691-b0c8-b699161ac2f4",
+  "version": "2.0",
+  "name": "Adjust browser size to 1200x1200",
+  "url": "",
+  "tests": [
+    {
+      "id": "5dd59d0c-9b99-42a3-a7a6-c2f45b94fe88",
+      "name": "Adjust browser size to 1200x1200",
+      "commands": [
+        {
+          "id": "2f2d82b5",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1200,1200",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "a254d0b9-43df-4c47-a546-b7274f6614cc",
+  "version": "2.0",
+  "name": "Click Submit",
+  "url": "",
+  "tests": [
+    {
+      "id": "a53bc565-92fe-46cd-8900-1d039418da3f",
+      "name": "Click Submit",
+      "commands": [
+        {
+          "id": "eab03057",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=submit",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "92918ea3",
+          "comment": "",
+          "command": "click",
+          "target": "id=submit",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

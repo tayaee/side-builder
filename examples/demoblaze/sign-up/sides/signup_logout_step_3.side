@@ -1,0 +1,75 @@
+{
+  "id": "318385cc-8dec-4054-89cb-bbaf6d848951",
+  "version": "2.0",
+  "name": "Sign up as side-builder-user-20260303 with password-20260303",
+  "url": "",
+  "tests": [
+    {
+      "id": "5bc798fe-2d53-4138-87eb-f1a9884a856e",
+      "name": "Sign up as side-builder-user-20260303 with password-20260303",
+      "commands": [
+        {
+          "id": "6bc1d476",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1024,768",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "430e548c",
+          "comment": "",
+          "command": "open",
+          "target": "https://www.demoblaze.com/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "17da9166",
+          "comment": "",
+          "command": "click",
+          "target": "id=signin2",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d83c02f7",
+          "comment": "",
+          "command": "type",
+          "target": "id=sign-username",
+          "targets": [],
+          "value": "side-builder-user-20260303"
+        },
+        {
+          "id": "b44be47d",
+          "comment": "",
+          "command": "type",
+          "target": "id=sign-password",
+          "targets": [],
+          "value": "password-20260303"
+        },
+        {
+          "id": "9de95f58",
+          "comment": "",
+          "command": "click",
+          "target": "xpath=//div[@id='signInModal']//button[@class='btn btn-primary']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fe6e31c8",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "id=nameofuser",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

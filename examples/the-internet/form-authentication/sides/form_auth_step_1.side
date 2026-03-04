@@ -1,0 +1,27 @@
+{
+  "id": "c31a8978-c1c1-41df-8249-5ced992d53cf",
+  "version": "2.0",
+  "name": "Go to the home of the-internet.herokuapp.com",
+  "url": "",
+  "tests": [
+    {
+      "id": "88d0eb28-0668-475d-b572-2eaa9a921435",
+      "name": "Go to the home of the-internet.herokuapp.com",
+      "commands": [
+        {
+          "id": "d3dca46b",
+          "comment": "",
+          "command": "open",
+          "target": "https://the-internet.herokuapp.com/",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [],
+  "urls": [
+    ""
+  ],
+  "plugins": []
+}

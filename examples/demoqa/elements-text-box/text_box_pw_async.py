@@ -7,7 +7,6 @@
 # Run: uv run <script>.py (with PEP 723 support)
 
 import asyncio
-import time
 
 from playwright.async_api import async_playwright
 
@@ -18,21 +17,9 @@ async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
-        time.sleep(2)
-        await play_side_async(
-            page,
-            "sides/resize_screen_step_1.side",
-            name="Adjust browser size to 500x500",
-            debug=True,
-        )
-        time.sleep(2)
-        await play_side_async(
-            page,
-            "sides/resize_screen_step_2.side",
-            name="Adjust browser size to 1000x1000",
-            debug=True,
-        )
-        time.sleep(2)
+        await play_side_async(page, 'sides/text_box_step_1.side', name='Go to https://demoqa.com/text-box.', debug=True)
+        await play_side_async(page, 'sides/text_box_step_2.side', name='Enter John Doe as fullname, johndoe@gmail.com as Email, 123 Devil St FL USA as current address and click Submit', debug=True)
+        await play_side_async(page, 'sides/text_box_step_3.side', name='Click Submit', debug=True)
         await browser.close()
         print("Done.")
 
