@@ -11,6 +11,7 @@ from openai import OpenAI
 from playwright.sync_api import sync_playwright
 
 from side_player.common import SeleniumCommand, SeleniumIdeSide, SeleniumTest
+from side_player import __version__
 from side_player.playwright.sync_api import play_side
 
 OPENAI_MODEL_NAME = "gpt-5-nano"
@@ -47,7 +48,7 @@ class AISideBuilder(SeleniumIdeSideBuilder):
         base64_image = base64.b64encode(screenshot_bytes).decode("utf-8")
 
         dom_hint = self.page.evaluate("""() => {
-            return Array.from(document.querySelectorAll('input, button, a'))
+            return Array.from(document.querySelectorAll('input, button, a, textarea, select, [role="button"]'))
                 .map(el => `<${el.tagName} id="${el.id}" name="${el.name}" class="${el.className}">`).join('\\n');
         }""")
 
@@ -218,6 +219,7 @@ if __name__ == "__main__":
 
 
 @click.command()
+@click.version_option(version=__version__)
 @click.option(
     "--output", default=f"demo_{int(time.time())}", help="Project name (e.g.: demo1)"
 )
