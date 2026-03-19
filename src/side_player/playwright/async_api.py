@@ -5,7 +5,10 @@ from playwright.async_api import Page
 from side_player.common import parse_selector
 
 
-async def highlight_async(page: Page, selector: str):
+async def highlight_async(
+    page: Page,
+    selector: str,
+):
     try:
         loc = page.locator(selector).first
         await loc.wait_for(state="visible", timeout=3000)

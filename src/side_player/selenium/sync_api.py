@@ -7,7 +7,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from side_player.common import parse_selector_selenium
 
 
-def highlight(driver: WebDriver, selector_tuple: tuple):
+def highlight(
+    driver: WebDriver,
+    selector_tuple: tuple,
+):
     try:
         wait = WebDriverWait(driver, 3)
         element = wait.until(EC.visibility_of_element_located(selector_tuple))

@@ -5,7 +5,10 @@ from playwright.sync_api import Page
 from side_player.common import parse_selector
 
 
-def highlight(page: Page, selector: str):
+def highlight(
+    page: Page,
+    selector: str,
+):
     try:
         loc = page.locator(selector).first
         loc.wait_for(state="visible", timeout=3000)
@@ -24,7 +27,11 @@ def highlight(page: Page, selector: str):
 
 
 def play_side(
-    page: Page, side_file: str, name: str = "", base_url: str = "", debug: bool = False
+    page: Page,
+    side_file: str,
+    name: str = "",
+    base_url: str = "",
+    debug: bool = False,
 ):
     if debug:
         print(f"Playing: {side_file} ({name})")

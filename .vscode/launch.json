@@ -1,0 +1,55 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "default",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "side_player.builder",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            },
+            "args": []
+        },
+        {
+            "name": "playwright",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "side_player.builder",
+            "console": "integratedTerminal",
+            "args": [
+                "--driver-name=playwright",
+                "--output=tmp_playwright_test",
+                "--browser-size=1024x800"
+            ]
+        },
+        {
+            "name": "selenium",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "side_player.builder",
+            "console": "integratedTerminal",
+            "args": [
+                "--driver-name=selenium",
+                "--output=tmp_selenium_test",
+                "--browser-size=1024x800",
+            ]
+        },
+        {
+            "name": "uc",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "side_player.builder",
+            "console": "integratedTerminal",
+            "args": [
+                "--driver-name=uc",
+                "--output=tmp_uc_test",
+                "--browser-size=1024x800",
+            ]
+        }
+    ]
+}

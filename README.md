@@ -11,7 +11,7 @@ Build and execute Selenium IDE (.side) scripts with AI-powered efficiency.
 
 ## Quick Start
 
-### Installation (via uv)
+### Local Installation
 ```bash
 git clone https://github.com/tayaee/side-builder.git
 cd side-builder
